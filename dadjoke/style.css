@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://emojipedia-us.s3.amazonaws.com/source/skype/289/smiling-face-with-sunglasses_1f60e.png') no-repeat center center;
+  background-size: 200px;
+  background-attachment: fixed;
+  color: #444;
+}
+
+.app-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.joke-container {
+  margin-bottom: 20px;
+}
+
+#joke {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  min-height: 80px;
+  line-height: 1.5;
+  transition: transform 0.4s ease-in-out;
+}
+
+button {
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e68900;
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+} 
+
+button:active {
+  transform: scale(1.05);
+}
+
+button::after {
+  content: " 😂";
+}
+
+#joke::before {
+  content: "🤣 ";
+}
